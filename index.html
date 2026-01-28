@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vidyashree M | Profile</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- QR Code Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 </head>
 <body>
 
@@ -14,11 +18,7 @@
     <img src="photo.jpg" alt="Vidyashree M" class="profile-pic">
 
     <!-- Moving Name -->
-    <marquee direction="left" scrollamount="6">
-      <span style="font-size: 32px; font-weight: bold;">
-        Vidyashree M
-      </span>
-    </marquee>
+    <div class="moving-name">Vidyashree M</div>
 
     <p class="subtitle">B.Sc (Hons) Data Science & Artificial Intelligence</p>
 
@@ -73,7 +73,22 @@
       </p>
     </section>
 
+    <!-- QR Code Section -->
+    <section class="qr-section">
+      <h2>Scan to View My Profile</h2>
+      <div id="qrcode"></div>
+    </section>
+
   </div>
+
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://lnkd.in/gZBMcEwR",
+      width: 180,
+      height: 180,
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
 
 </body>
 </html>
