@@ -28,13 +28,12 @@ body {
   margin-bottom: 15px;
 }
 
-/* --- Moving Name --- */
-.moving-name {
-  margin: 10px 0;
-  color: #1f2933;
-  font-size: 34px;
-  font-weight: bold;
-  animation: moveName 2.5s ease-in-out infinite alternate;
+.profile-name {
+    text-align: center;    /* centers the name below the photo */
+    font-weight: bold;     /* makes it bold */
+    margin-top: 10px;      /* spacing between photo and name */
+    font-size: 24px;       /* adjust size as needed */
+    color: #333;           /* optional: text color */
 }
 
 /* --- Subtitle --- */
