@@ -3,8 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-
-  /* Original background image only */
   background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
@@ -13,10 +11,7 @@ body {
 .container {
   max-width: 850px;
   margin: 40px auto;
-
-  /* Semi-transparent container instead of overlay */
   background-color: rgba(255, 255, 255, 0.95);
-
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -38,6 +33,7 @@ body {
   margin: 10px 0;
   color: #1f2933;
   font-size: 34px;
+  font-weight: bold;
   animation: moveName 2.5s ease-in-out infinite alternate;
 }
 
@@ -97,6 +93,16 @@ a:hover {
   text-decoration: underline;
 }
 
+/* --- QR Code --- */
+.qr-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#qrcode {
+  margin-top: 15px;
+}
+
 /* --- Animation --- */
 @keyframes moveName {
   from {
@@ -121,3 +127,4 @@ a:hover {
     font-size: 20px;
   }
 }
+
